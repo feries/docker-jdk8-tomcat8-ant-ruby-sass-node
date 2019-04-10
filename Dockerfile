@@ -56,4 +56,4 @@ RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 8080
 COPY startup.sh /opt/startup.sh
 ENTRYPOINT /opt/startup.sh
-WORKDIR $CATALINA_HOME%
+WORKDIR $CATALINA_HOME
