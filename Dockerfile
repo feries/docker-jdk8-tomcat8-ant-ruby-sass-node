@@ -50,6 +50,9 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh
     && nvm alias default $NODE_VERSION \
     && nvm use default
 
+# Install ImageMagick
+RUN apt-get -y install imagemagick
+
 # Clean up
 RUN rm -rf /var/lib/apt/lists/*
 
